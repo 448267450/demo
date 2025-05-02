@@ -3,24 +3,10 @@ import ReactDom from "react-dom/client";
 
 const root = ReactDom.createRoot(document.getElementById('root'));
 
-class Count extends React.Component {
-    state = { num: 0 }
-
-    render() {
-        let { num } = this.state;
-        return (
-            
-            <div>
-                <span>{num}</span>
-                <br />
-                <button onClick={() => {
-                    num++;
-                    this.setState({ num });
-                }}>Increment</button>
-            </div>
-        );
-    }
-}
+let text = "Astral's Learning sessions";
 root.render(
-    <Count />
+    <div>
+        {text}
+        
+    </div>
 );
